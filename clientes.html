@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="clientes.css">
+</head>
+<body>
+    <div>
+        <h1>Club Tzedakim - Tzedaká</h1>
+        <ion-icon name="menu-outline" class="menu-outline"></ion-icon>
+    </div>
+    <div class="container">
+        <div class="menu">
+            <a href="inicio.html"><span><ion-icon name="link-outline"></ion-icon>Inicio</span><ion-icon name="caret-down-outline"></ion-icon></a>
+            <a href="#"><span><ion-icon name="earth-outline"></ion-icon>Paises</span><ion-icon name="caret-down-outline"></ion-icon></a>
+            <a href="#"><span><ion-icon name="location-outline"></ion-icon>Ciudades</span><ion-icon name="caret-down-outline"></ion-icon></a>
+            <a href="empleados.html"><span><ion-icon name="person-outline"></ion-icon>Empleados</span><ion-icon name="caret-down-outline"></ion-icon></a>
+            <a href="clientes.html"><span><ion-icon name="people-outline" class="clientes"></ion-icon>Clientes</span><ion-icon name="caret-down-outline"></ion-icon></a>
+            <a href="#"><span><ion-icon name="cart-outline"></ion-icon>Productos</span><ion-icon name="caret-down-outline"></ion-icon></a>
+            <a href="#"><span><ion-icon name="school-outline"></ion-icon>Cursos</span><ion-icon name="caret-down-outline"></ion-icon></a>
+            <a href="#"><span><ion-icon name="arrow-redo-outline"></ion-icon>Detalles Subscripción</span><ion-icon name="caret-down-outline"></ion-icon></a>
+        </div>
+        <div class="texto">
+            <h1>Clientes</h1>
+            <form action="procesar.php" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Nombres:" class="input"><br><br>
+                
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required placeholder="Apellidos:" class="input"><br><br>
+                
+                <label for="pais">País:</label>
+                <input type="text" id="pais" name="pais" required placeholder="Pais:" class="input"><br><br>
+                
+                <label for="telefono">Teléfono:</label>
+                <div>
+                    <input type="text" id="codigo_area" name="codigo_area" maxlength="3" placeholder="Código de área:" required class="input">
+                    <input type="text" id="telefono" name="telefono" maxlength="10" placeholder="Número de teléfono:" required class="input"><br><br>
+                </div>
+                
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required placeholder="Correo Electrónico:" class="input"><br><br>
+                
+                <div class="botones">
+                    <input type="registrar" value="Registrar">
+                    <input type="actualizar" value="Actualizar">
+                    <input type="limpiar" value="Limpiar">
+                </div>
+              </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="empleados.css">
+</head>
+<body>
+    <div>
+        <h1>Club Tzedakim - Tzedaká</h1>
+        <ion-icon name="menu-outline" class="menu-outline"></ion-icon>
+    </div>
+    <div class="container">
+        <div class="menu">
+            <a href="inicio.html"><span><ion-icon name="link-outline"></ion-icon>Inicio</span><ion-icon name="caret-down-outline"></ion-icon></a>
+            <a href="#"><span><ion-icon name="earth-outline"></ion-icon>Paises</span><ion-icon name="caret-down-outline"></ion-icon></a>
+            <a href="#"><span><ion-icon name="location-outline"></ion-icon>Ciudades</span><ion-icon name="caret-down-outline"></ion-icon></a>
+            <a href="empleados.html"><span><ion-icon name="person-outline"></ion-icon>Empleados</span><ion-icon name="caret-down-outline"></ion-icon></a>
+            <a href="clientes.html"><span><ion-icon name="people-outline" class="clientes"></ion-icon>Clientes</span><ion-icon name="caret-down-outline"></ion-icon></a>
+            <a href="#"><span><ion-icon name="cart-outline"></ion-icon>Productos</span><ion-icon name="caret-down-outline"></ion-icon></a>
+            <a href="#"><span><ion-icon name="school-outline"></ion-icon>Cursos</span><ion-icon name="caret-down-outline"></ion-icon></a>
+            <a href="#"><span><ion-icon name="arrow-redo-outline"></ion-icon>Detalles Subscripción</span><ion-icon name="caret-down-outline"></ion-icon></a>
+        </div>
+        <div class="texto">
+            <h1>Empleados</h1>
+            <form action="/registro" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Nombre:" class="input"><br><br>
+            
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required placeholder="Apellido" class="input"><br><br>
+            
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required placeholder="Correo:" class="input"><br><br>
+            
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" required placeholder="Contraseña:" class="input"><br><br>
+            
+                <label for="confirmar-contrasena">Confirmar contraseña:</label>
+                <input type="password" id="confirmar-contrasena" name="confirmar-contrasena" required placeholder="Repetir Contraseña" class="input"><br><br>
+            
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
